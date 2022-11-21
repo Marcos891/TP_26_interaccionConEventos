@@ -12,6 +12,8 @@ window.onload = function(){
 
     logoDH.addEventListener("mouseover", () => {
         body.classList.toggle('fondoMoviesList');
+        body.style.backgroundColor = '#7f7f7f'
+
 })
     
     console.log(body);

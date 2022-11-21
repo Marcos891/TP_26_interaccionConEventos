@@ -37,12 +37,19 @@ window.onload = function () {
                 break;
 
             default:
+                estadoSecreto = 0;
                 break;
         }
     }
+    titulo.addEventListener("mouseover",()=>{
+        titulo.style.color = "green"
+   })
+   titulo.addEventListener("mouseout",()=>{
+        titulo.style.color = "blue"
+   })
 
     inputTitulo.addEventListener('keyup', (e) => {
-        checkKey('down', e.key)
+        checkKey(e.key)
     });
     /*     inputTitulo.addEventListener('keyup', (e) => {
             console.log('up',e)
